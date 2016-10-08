@@ -11,6 +11,7 @@ import { InicioComponent } from './components/inicio.component';
 import { NosotrosComponent } from './components/nosotros.component';
 import { ContactenosComponent } from './components/contactenos.component';
 import { EmpleadosComponent } from './components/empleados.component';
+import { EditarEmpleadoComponent } from './components/editar-empleado.component';
 import { ProductosComponent } from './components/productos.component';
 
 import { AppComponent }  from './app.component';
@@ -22,6 +23,7 @@ import { AppComponent }  from './app.component';
                   NosotrosComponent,
                   ContactenosComponent,
                   EmpleadosComponent,
+                  EditarEmpleadoComponent,
                   ProductosComponent ],
   bootstrap:    [ AppComponent ],
   providers:    [ appRoutingProviders, EmpleadoService, ProductosService ]

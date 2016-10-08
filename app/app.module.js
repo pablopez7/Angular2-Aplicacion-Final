@@ -19,6 +19,7 @@ var inicio_component_1 = require('./components/inicio.component');
 var nosotros_component_1 = require('./components/nosotros.component');
 var contactenos_component_1 = require('./components/contactenos.component');
 var empleados_component_1 = require('./components/empleados.component');
+var editar_empleado_component_1 = require('./components/editar-empleado.component');
 var productos_component_1 = require('./components/productos.component');
 var app_component_1 = require('./app.component');
 var AppModule = (function () {
@@ -32,6 +33,7 @@ var AppModule = (function () {
                 nosotros_component_1.NosotrosComponent,
                 contactenos_component_1.ContactenosComponent,
                 empleados_component_1.EmpleadosComponent,
+                editar_empleado_component_1.EditarEmpleadoComponent,
                 productos_component_1.ProductosComponent],
             bootstrap: [app_component_1.AppComponent],
             providers: [app_routing_1.appRoutingProviders, empleados_service_1.EmpleadoService, productos_service_1.ProductosService]

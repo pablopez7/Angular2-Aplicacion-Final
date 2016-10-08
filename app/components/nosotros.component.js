@@ -27,6 +27,9 @@ var NosotrosComponent = (function () {
     NosotrosComponent.prototype.clickEnEmpleado = function (empleado) {
         this.router.navigate(['/empleado', empleado.id]);
     };
+    NosotrosComponent.prototype.clickEditarEmpleado = function (empleado) {
+        this.router.navigate(['/editar-empleado', empleado.id]);
+    };
     NosotrosComponent = __decorate([
         core_1.Component({
             templateUrl: '/app/views/nosotros.component.html'

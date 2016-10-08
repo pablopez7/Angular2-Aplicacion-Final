@@ -1,7 +1,8 @@
-<h1>Nosotros</h1>
+<h1>Empleados</h1>
 <ul *ngFor="let empleado of empleados">
-    <li
-        (click)="clickEnEmpleado(empleado)">
+    <li>
         <span>{{empleado.id}} - </span> {{empleado.name}}
     </li>
+    <button class="btn btn-primary" (click)="clickEnEmpleado(empleado)">Detalles</button>
+    <button class="btn btn-primary" (click)="clickEditarEmpleado(empleado)">Editar</button>
 </ul>

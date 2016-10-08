@@ -28,4 +28,8 @@ export class NosotrosComponent implements OnInit {
     clickEnEmpleado(empleado) {
         this.router.navigate(['/empleado', empleado.id]);
     }
+
+    clickEditarEmpleado(empleado) {
+        this.router.navigate(['/editar-empleado', empleado.id]);
+    }
 }

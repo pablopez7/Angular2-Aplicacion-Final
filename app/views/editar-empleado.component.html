@@ -1,0 +1,18 @@
+<div *ngIf="empleado">
+<h3>{{empleado.name}}</h3>
+    <div>
+        <label><strong>Nombre:  </strong></label>
+        <input [(ngModel)]="empleado.name" placeholder="name"/><br>
+    </div>
+    <div>
+        <label><strong>Correo Electrónico:  </strong></label>
+        <input [(ngModel)]="empleado.email" placeholder="email"/><br>
+    </div>
+    <div>
+        <label><strong>Compañia:  </strong></label>
+        <input [(ngModel)]="empleado.company.name" placeholder="company.name"/><br>
+    </div>
+    <p>
+        <button class="btn btn-primary" (click)="volver()">Editar</button>
+    </p>
+</div>
