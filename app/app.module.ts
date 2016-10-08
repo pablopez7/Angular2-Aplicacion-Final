@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms'
 
 import { routing, appRoutingProviders } from './app.routing';
 import { EmpleadoService } from './services/empleados.service'
+import { ProductosService } from './services/productos.service'
 
 import { InicioComponent } from './components/inicio.component';
 import { NosotrosComponent } from './components/nosotros.component';
 import { ContactenosComponent } from './components/contactenos.component';
 import { EmpleadosComponent } from './components/empleados.component';
+import { ProductosComponent } from './components/productos.component';
 
 import { AppComponent }  from './app.component';
 
@@ -19,8 +21,9 @@ import { AppComponent }  from './app.component';
                   InicioComponent,
                   NosotrosComponent,
                   ContactenosComponent,
-                  EmpleadosComponent ],
+                  EmpleadosComponent,
+                  ProductosComponent ],
   bootstrap:    [ AppComponent ],
-  providers:    [ appRoutingProviders, EmpleadoService ]
+  providers:    [ appRoutingProviders, EmpleadoService, ProductosService ]
 })
 export class AppModule { }

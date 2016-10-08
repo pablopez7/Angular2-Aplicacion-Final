@@ -14,10 +14,12 @@ var http_1 = require('@angular/http');
 var forms_1 = require('@angular/forms');
 var app_routing_1 = require('./app.routing');
 var empleados_service_1 = require('./services/empleados.service');
+var productos_service_1 = require('./services/productos.service');
 var inicio_component_1 = require('./components/inicio.component');
 var nosotros_component_1 = require('./components/nosotros.component');
 var contactenos_component_1 = require('./components/contactenos.component');
 var empleados_component_1 = require('./components/empleados.component');
+var productos_component_1 = require('./components/productos.component');
 var app_component_1 = require('./app.component');
 var AppModule = (function () {
     function AppModule() {
@@ -29,9 +31,10 @@ var AppModule = (function () {
                 inicio_component_1.InicioComponent,
                 nosotros_component_1.NosotrosComponent,
                 contactenos_component_1.ContactenosComponent,
-                empleados_component_1.EmpleadosComponent],
+                empleados_component_1.EmpleadosComponent,
+                productos_component_1.ProductosComponent],
             bootstrap: [app_component_1.AppComponent],
-            providers: [app_routing_1.appRoutingProviders, empleados_service_1.EmpleadoService]
+            providers: [app_routing_1.appRoutingProviders, empleados_service_1.EmpleadoService, productos_service_1.ProductosService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

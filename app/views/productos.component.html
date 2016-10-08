@@ -1,0 +1,7 @@
+<h1>Productos</h1>
+<ul *ngFor="let producto of productos">
+    <li
+        (click)="clickEnProducto(producto)">
+        <span>{{producto.nombre}} - </span> {{producto._id}}
+    </li>
+</ul>
