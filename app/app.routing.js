@@ -1,9 +1,9 @@
 "use strict";
 var router_1 = require('@angular/router');
-var inicio_component_1 = require('./inicio.component');
-var nosotros_component_1 = require('./nosotros.component');
-var contactenos_component_1 = require('./contactenos.component');
-var empleados_component_1 = require('./empleados.component');
+var inicio_component_1 = require('./components/inicio.component');
+var nosotros_component_1 = require('./components/nosotros.component');
+var contactenos_component_1 = require('./components/contactenos.component');
+var empleados_component_1 = require('./components/empleados.component');
 var appRoutes = [
     { path: '', component: inicio_component_1.InicioComponent },
     { path: 'nosotros', component: nosotros_component_1.NosotrosComponent },

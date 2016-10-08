@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var empleados_service_1 = require('./empleados.service');
+var empleados_service_1 = require('../services/empleados.service');
 var NosotrosComponent = (function () {
     function NosotrosComponent(empleadoService, router) {
         this.empleadoService = empleadoService;
@@ -29,7 +29,7 @@ var NosotrosComponent = (function () {
     };
     NosotrosComponent = __decorate([
         core_1.Component({
-            templateUrl: '/app/nosotros.component.html'
+            templateUrl: '/app/views/nosotros.component.html'
         }), 
         __metadata('design:paramtypes', [empleados_service_1.EmpleadoService, router_1.Router])
     ], NosotrosComponent);

@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core'
 import { Router } from '@angular/router'
 
-import { EmpleadoService } from './empleados.service'
+import { EmpleadoService } from '../services/empleados.service'
 
 @Component({
-  templateUrl : '/app/nosotros.component.html'
+  templateUrl : '/app/views/nosotros.component.html'
 })
 
 export class NosotrosComponent implements OnInit {

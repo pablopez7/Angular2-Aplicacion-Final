@@ -13,11 +13,11 @@ var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
 var forms_1 = require('@angular/forms');
 var app_routing_1 = require('./app.routing');
-var empleados_service_1 = require('./empleados.service');
-var inicio_component_1 = require('./inicio.component');
-var nosotros_component_1 = require('./nosotros.component');
-var contactenos_component_1 = require('./contactenos.component');
-var empleados_component_1 = require('./empleados.component');
+var empleados_service_1 = require('./services/empleados.service');
+var inicio_component_1 = require('./components/inicio.component');
+var nosotros_component_1 = require('./components/nosotros.component');
+var contactenos_component_1 = require('./components/contactenos.component');
+var empleados_component_1 = require('./components/empleados.component');
 var app_component_1 = require('./app.component');
 var AppModule = (function () {
     function AppModule() {

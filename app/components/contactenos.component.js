@@ -17,7 +17,7 @@ var ContactenosComponent = (function () {
     };
     ContactenosComponent = __decorate([
         core_1.Component({
-            templateUrl: './app/contactenos.component.html'
+            templateUrl: './app/views/contactenos.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], ContactenosComponent);

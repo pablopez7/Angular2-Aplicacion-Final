@@ -1,9 +1,9 @@
 import { Component } from '@angular/core'
 import { Router, ActivatedRoute } from '@angular/router'
-import { EmpleadoService } from './empleados.service'
+import { EmpleadoService } from '../services/empleados.service'
 
 @Component({
-    templateUrl : '/app/empleado.component.html'
+    templateUrl : '/app/views/empleado.component.html'
 })
 export class EmpleadosComponent {
     empleado:Object;
