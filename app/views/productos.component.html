@@ -1,7 +1,8 @@
 <h1>Productos</h1>
 <ul *ngFor="let producto of productos">
-    <li
-        (click)="clickEnProducto(producto)">
+    <li>
         <span>{{producto.nombre}} - </span> {{producto._id}}
     </li>
+    <button class="btn btn-primary" (click)="clickEnProducto(producto)">Detalles</button>
+    <button class="btn btn-primary" (click)="clickEditarProducto(producto)">Editar</button>
 </ul>

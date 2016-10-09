@@ -15,8 +15,8 @@ export class ProductosService {
                     .catch(this.ocurrioUnError);
     }
 
-    informacionProductoso(nombre: string) {
-        let url = `http://localhost:3030/productos/${nombre}`;
+    informacionProducto(_id: string) {
+        let url = `http://localhost:3030/producto/${_id}`;
         return this.http.get(url)
                         .toPromise()
                         .then(producto => producto.json());

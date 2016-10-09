@@ -6,15 +6,16 @@ import { ContactenosComponent } from './components/contactenos.component';
 import { EmpleadosComponent } from './components/empleados.component';
 import { EditarEmpleadoComponent } from './components/editar-empleado.component';
 import { ProductosComponent } from './components/productos.component';
+import { DetalleProductoComponent } from './components/detalle-producto.component';
 
 const appRoutes: Routes = [
   { path: '' , component: InicioComponent},
   { path: 'nosotros' , component: NosotrosComponent},
   { path: 'productos' , component: ProductosComponent},
+  { path: 'detalle-producto/:_id' , component: DetalleProductoComponent},
   { path: 'contactenos' , component: ContactenosComponent},
   { path: 'empleado/:id' , component: EmpleadosComponent},
   { path: 'editar-empleado/:id' , component: EditarEmpleadoComponent},
-  { path: 'nosotros' , component: NosotrosComponent},
   { path: '**', component: InicioComponent}
 ]
 

@@ -11,29 +11,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var productos_service_1 = require('../services/productos.service');
-var ProductosComponent = (function () {
-    function ProductosComponent(productosService, router) {
+var DetalleProductoComponent = (function () {
+    function DetalleProductoComponent(route, productosService, router) {
+        this.route = route;
         this.productosService = productosService;
         this.router = router;
     }
-    ProductosComponent.prototype.listaDeProductos = function () {
+    DetalleProductoComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.productosService.listaDeProductos()
-            .then(function (productos) { return _this.productos = productos; });
+        var _id = this.route.snapshot.params['_id'];
+        this.productosService.informacionProducto(_id)
+            .then(function (producto) { return _this.producto = producto; });
     };
-    ProductosComponent.prototype.ngOnInit = function () {
-        this.listaDeProductos();
+    DetalleProductoComponent.prototype.volver = function () {
+        this.router.navigate(['/productos']);
     };
-    ProductosComponent.prototype.clickEnProducto = function (producto) {
-        this.router.navigate(['/detalle-producto', producto._id]);
-    };
-    ProductosComponent = __decorate([
+    DetalleProductoComponent = __decorate([
         core_1.Component({
-            templateUrl: '/app/views/productos.component.html'
+            templateUrl: '/app/views/detalle-producto.component.html'
         }), 
-        __metadata('design:paramtypes', [productos_service_1.ProductosService, router_1.Router])
-    ], ProductosComponent);
-    return ProductosComponent;
+        __metadata('design:paramtypes', [router_1.ActivatedRoute, productos_service_1.ProductosService, router_1.Router])
+    ], DetalleProductoComponent);
+    return DetalleProductoComponent;
 }());
-exports.ProductosComponent = ProductosComponent;
-//# sourceMappingURL=productos.component.js.map
+exports.DetalleProductoComponent = DetalleProductoComponent;
+//# sourceMappingURL=detalle-producto.component.js.map

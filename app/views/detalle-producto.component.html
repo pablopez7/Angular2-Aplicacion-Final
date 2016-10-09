@@ -1,0 +1,18 @@
+<div *ngIf="producto">
+<h3>{{producto.nombre}}</h3>
+    <div>
+        <label>Id:</label> {{producto._id}}
+    </div>
+    <div>
+        <label>Descripcion:</label> {{producto.descripcion}}
+    </div>
+    <div>
+        <label>Directorio:</label> {{producto.directorio}}
+    </div>
+    <div>
+        <label>Estatus:</label> {{producto.estatus}}
+    </div>
+    <p>
+        <button class="btn btn-primary" (click)="volver()">Volver</button>
+    </p>
+</div>

@@ -21,8 +21,8 @@ var ProductosService = (function () {
             .then(function (respuesta) { return respuesta.json(); })
             .catch(this.ocurrioUnError);
     };
-    ProductosService.prototype.informacionProductoso = function (nombre) {
-        var url = "http://localhost:3030/productos/" + nombre;
+    ProductosService.prototype.informacionProducto = function (_id) {
+        var url = "http://localhost:3030/producto/" + _id;
         return this.http.get(url)
             .toPromise()
             .then(function (producto) { return producto.json(); });

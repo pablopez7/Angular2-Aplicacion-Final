@@ -10,7 +10,7 @@ import { ProductosService } from '../services/productos.service'
 export class ProductosComponent implements OnInit {
     productos:Array<Object>;
 
-    private selectedNombre: string;
+    private selectedId: string;
 
     constructor(
         private productosService: ProductosService,
@@ -26,6 +26,6 @@ export class ProductosComponent implements OnInit {
     }
 
     clickEnProducto(producto) {
-        this.router.navigate(['/detalle-producto', producto.nombre]);
+        this.router.navigate(['/detalle-producto', producto._id]);
     }
 }

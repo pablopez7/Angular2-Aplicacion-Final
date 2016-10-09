@@ -13,6 +13,7 @@ import { ContactenosComponent } from './components/contactenos.component';
 import { EmpleadosComponent } from './components/empleados.component';
 import { EditarEmpleadoComponent } from './components/editar-empleado.component';
 import { ProductosComponent } from './components/productos.component';
+import { DetalleProductoComponent } from './components/detalle-producto.component';
 
 import { AppComponent }  from './app.component';
 
@@ -21,10 +22,11 @@ import { AppComponent }  from './app.component';
   declarations: [ AppComponent, 
                   InicioComponent,
                   NosotrosComponent,
-                  ContactenosComponent,
                   EmpleadosComponent,
                   EditarEmpleadoComponent,
-                  ProductosComponent ],
+                  ProductosComponent,
+                  DetalleProductoComponent,
+                  ContactenosComponent, ],
   bootstrap:    [ AppComponent ],
   providers:    [ appRoutingProviders, EmpleadoService, ProductosService ]
 })
