@@ -14,6 +14,7 @@ import { EmpleadosComponent } from './components/empleados.component';
 import { EditarEmpleadoComponent } from './components/editar-empleado.component';
 import { ProductosComponent } from './components/productos.component';
 import { DetalleProductoComponent } from './components/detalle-producto.component';
+import { CrearProductoComponent } from './components/crear-producto.component';
 
 import { AppComponent }  from './app.component';
 
@@ -26,6 +27,7 @@ import { AppComponent }  from './app.component';
                   EditarEmpleadoComponent,
                   ProductosComponent,
                   DetalleProductoComponent,
+                  CrearProductoComponent,
                   ContactenosComponent, ],
   bootstrap:    [ AppComponent ],
   providers:    [ appRoutingProviders, EmpleadoService, ProductosService ]

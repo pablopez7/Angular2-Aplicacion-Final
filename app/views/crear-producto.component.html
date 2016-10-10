@@ -1,0 +1,57 @@
+<h1>Crear Producto</h1>
+<form (ngSubmit)="enviarFormulario(formulario)" #formulario="ngForm">
+    <fieldset class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" 
+                class="form-control" 
+                id="nombre"
+                name="nombre"
+                ngModel
+                required>        
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label for="descripcion">Descripción:</label>
+        <input type="text" 
+                class="form-control" 
+                id="descripcion"
+                name="descripcion"
+                ngModel
+                required>
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label for="directorio">Directorio:</label>
+        <input type="text" 
+                class="form-control" 
+                id="directorio"
+                name="directorio"
+                ngModel
+                required>
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label for="key">Key:</label>
+        <input type="text" 
+                class="form-control" 
+                id="key"
+                name="key"
+                ngModel
+                required>
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label for="estatus">Estatus:</label>
+        <select class="form-control" 
+                id="estatus"
+                name="estatus"
+                ngModel
+                required>
+            <option value="true" selected>Valido</option> 
+            <option value="false">Invalido</option>
+        </select>
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary"
+            [disabled]="!formulario.valid">Enviar</button>
+</form>

@@ -27,6 +27,12 @@ var ProductosService = (function () {
             .toPromise()
             .then(function (producto) { return producto.json(); });
     };
+    ProductosService.prototype.crearProducto = function (producto) {
+        var nuevoProducto = JSON.stringify(producto);
+        return this.http.post('http://localhost:3030/producto', nuevoProducto)
+            .toPromise()
+            .then(function (respuesta) { return console.log(respuesta); });
+    };
     ProductosService.prototype.ocurrioUnError = function (error) {
         console.error('Ocurrio un error', error);
         return Promise.reject(error.message || error);
