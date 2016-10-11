@@ -18,7 +18,7 @@ export class CrearProductoComponent {
             .crearProducto({formulario})
         console.log("Se ha creado un nuevo producto")
     }
-
+    
     volver(){
         this.router.navigate(['/productos']);
     }
